@@ -1,0 +1,19 @@
+#! /bin/bash
+#=                             Script mit bash abarbeiten
+export TUSTEP_MDS=BATCH
+#=                             TUSTEP muss im Batch-Modus laufen
+export TUSTEP_LIB=/Applications/TUSTEP.app/Contents
+#=                             Pfad zum TUSTEP-Directory tustep
+export TUSTEP_DSK=/Library/WebServer/CGI-Executables/test/compare/tustep
+#=                             Pfad zur INI-Datei und den Daten
+export TUSTEP_SCR=/Library/WebServer/CGI-Executables/test/
+#=                             Pfad zu den Scratch-Dateien
+export TUSTEP_PRJ=-
+#=                             Subdir. für TUSTEP_DSK + TUSTEP_SCR
+export TUSTEP_MEM=99900000
+#=                             Sitzungsnummer
+export TUSTEP_CGI=compare/UTF-8
+#=                             Name des CGI-Makros in der INI-Datei
+#=                             Code: ISO-8859-1 oder UTF-8
+$TUSTEP_LIB/tustep/cgibin
+#=                             TUSTEP-Makro ausfuehren
